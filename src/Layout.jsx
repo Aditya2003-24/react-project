@@ -1,7 +1,6 @@
 import NavScrollExample from "./Navbar"
 import FillExample from "./Navbar2"
 
-
 const Layout = () => {
   return (
     <>
@@ -9,6 +8,7 @@ const Layout = () => {
      
     <FillExample/>
 
+    
     </>
   )
 }

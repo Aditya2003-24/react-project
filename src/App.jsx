@@ -8,6 +8,8 @@ import Layout from './Layout'
 import BasicExample from './Rise'
 import AOS from 'aos'
 import "aos/dist/aos.css";
+import Tailwind from '../Tailwind'
+
 
 
 
@@ -27,8 +29,8 @@ function App() {
 
   return (
     <>
-      
-
+    
+    
       <Layout />
       <br />
       <br />
@@ -37,6 +39,8 @@ function App() {
       <br />
 
       <Cards />
+      <br />
+      <Tailwind />
       <br />
       <BasicExample />
       <br />
