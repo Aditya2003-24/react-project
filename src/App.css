@@ -1,4 +1,274 @@
 @import "tailwindcss";
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+
+
+/* Centering the form container */
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+/* Form container styling */
+.dec {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Label styling */
+.lab, .ema, .pass {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+/* Input fields styling */
+.inp, .put, .word {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.inp:focus, .put:focus, .word:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(106, 17, 203, 0.3);
+}
+
+/* Submit button styling */
+.sub {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6a11cb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.sub:hover {
+  background-color: #2575fc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Centering the login form */
+.log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+/* Form container styling */
+.orm {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Label styling */
+.use, .leb {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+/* Input fields styling */
+.rnam, .egna {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.rnam:focus, .egna:focus {
+  border-color: #ff758c;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(255, 117, 140, 0.3);
+}
+
+/* Submit button styling */
+.tim {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff758c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.tim:hover {
+  background-color: #ff4f75;
+}
+
+
+
+
+
+
+
+
+
+/* Booking Form Container */
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+/* Form Styling */
+.booking-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Label Styling */
+.booking-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Input Fields */
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #ff7e5f;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(255, 126, 95, 0.3);
+}
+
+/* Submit Button */
+.book-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff7e5f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+/* Button Hover Effect */
+.book-button:hover {
+  background-color: #ff5733;
+}
+
+
+
+
+
+
+
+
+
+
+        .content {
+             background: url('src/IMAGES/pexels-imadclicks-7402641.jpg') no-repeat center center/cover;
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 379px;
+            height: 168px;
+        }
+       
+        .pera{
+            font-size: 20px;
+            color: white;
+             border-bottom: 2px solid white;
+        width: 100px;
+        margin-bottom: px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .img{
       width: 400px;
       height: 140px;
@@ -6,7 +276,7 @@
 
     .carsec{
       display: flex;
-      gap: 40px;
+      gap: 15px;
       justify-content: center;
       margin-top: 60px;
     }

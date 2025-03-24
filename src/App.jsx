@@ -7,15 +7,14 @@ import Footer from './Footer'
 import Layout from './Layout'
 import BasicExample from './Rise'
 import AOS from 'aos'
-import "aos/dist/aos.css";
-import Tailwind from '../Tailwind'
+import "aos/dist/aos.css"
 
 
-
-
-
-
-
+import { Route, Routes } from 'react-router-dom'
+import Example from './Signup'
+import Login from "./Login";
+import CarBooking from './Carbooking'
+import Tailwind from './Tailwind'
 
 
 
@@ -29,9 +28,20 @@ function App() {
 
   return (
     <>
-    
-    
-      <Layout />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<UncontrolledExample />} />
+          <Route path="/card" element={<Cards />} />
+          <Route path="/tailwind" element={<Tailwind />} />
+          <Route path="/basicexample" element={<BasicExample />} />
+          <Route path="/footer" element={<Footer />} />
+        </Route>
+        <Route path="/example" element={<Example />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/car" element={<CarBooking />} />
+      </Routes>
+
+      {/* <Layout />
       <br />
       <br />
 
@@ -45,7 +55,7 @@ function App() {
       <BasicExample />
       <br />
 
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

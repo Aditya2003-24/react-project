@@ -6,6 +6,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+{/* <h2
+  class="heading font-regular aos-init aos-animate"
+  data-aos="fade-up"
+  data-aos-offset="100"
+  data-aos-duration="650"
+  data-aos-easing="ease-in-out"
+>
+  What we do
+</h2>; */}
+
 
 
 function Cards() {
@@ -18,116 +28,103 @@ function Cards() {
     }, []);
   return (
     <>
-      <div style={{ textAlign: "center", fontFamily:"initial" }} data-aos="fade-up">
+      <div
+        style={{ textAlign: "center", fontFamily: "initial",marginTop:"110px" }}
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-duration="650"
+        data-aos-easing="ease-in-out"
+      >
         <h1>What we do</h1>
       </div>
 
-      <div style={{ textAlign: "center",fontFamily:"initial" }} data-aos="fade-up">
+      <div
+        style={{ textAlign: "center", fontFamily: "initial" }}
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-duration="650"
+        data-aos-easing="ease-in-out"
+      >
         <h4>
           We bring together diverse, future-facing industries and communities to
           co-create a positive world, where one
           <br /> enables the other to Rise.
         </h4>
       </div>
-      <div className="carsec" data-aos="fade-up">
-        <div>
-          <Card className="Card">
-            <Card.Img src={image} alt="Card image" className="img" />
-            <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
-            </Card.ImgOverlay>
-          </Card>
+      <div
+        style={{
+          display: "flex",
+          flexWrap:"wrap",
+          gap: "15px",
+          marginLeft:"170px",
+          marginTop:"90px"
+          
+        }}
+       data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-duration="650"
+        data-aos-easing="ease-in-out"
+      >
+       <div>
+          <div className="content">
+        <p className="pera" style={{display:"flex",marginTop:"80px"}}>Action <span style={{marginTop:"4px",fontSize:"27px"}}><GoArrowUpRight /></span></p>
+      </div>
         </div>
         <div>
-          <Card className="Card">
-            <Card.Img src={image} alt="Card image" className="img" />
-            <Card.ImgOverlay>
-              <Card.Text className="do">
-                Action
-                <GoArrowUpRight />
-              </Card.Text>
-            </Card.ImgOverlay>
-          </Card>
+          <div className="content">
+        <p className="pera" style={{display:"flex",marginTop:"80px"}}>Action <span style={{marginTop:"4px",fontSize:"27px"}}><GoArrowUpRight /></span></p>
+      </div>
         </div>
         <div>
-          <Card className="Card">
-            <Card.Img src={image} alt="Card image" className="img" />
-            <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
-            </Card.ImgOverlay>
-          </Card>
+          <div className="content">
+        <p className="pera" style={{display:"flex",marginTop:"80px"}}>Action <span style={{marginTop:"4px",fontSize:"27px"}}><GoArrowUpRight /></span></p>
+      </div>
+        </div>
+
+             <div>
+          <div className="content">
+        <p className="pera" style={{display:"flex",marginTop:"80px"}}>Action <span style={{marginTop:"4px",fontSize:"27px"}}><GoArrowUpRight /></span></p>
+      </div>
+        </div>
+        <div>
+          <div className="content">
+        <p className="pera" style={{display:"flex",marginTop:"80px"}}>Action <span style={{marginTop:"4px",fontSize:"27px"}}><GoArrowUpRight /></span></p>
+      </div>
+        </div>
+        <div>
+          <div className="content">
+        <p className="pera" style={{display:"flex",marginTop:"80px"}}>Action <span style={{marginTop:"4px",fontSize:"27px"}}><GoArrowUpRight /></span></p>
+      </div>
+        </div>
+
+        {/* second div */}
+
+        <div>
+          <div className="content">
+        <p className="pera" style={{display:"flex",marginTop:"80px"}}>Action <span style={{marginTop:"4px",fontSize:"27px"}}><GoArrowUpRight /></span></p>
+      </div>
+        </div>
+       <div>
+          <div className="content">
+        <p className="pera" style={{display:"flex",marginTop:"80px"}}>Action <span style={{marginTop:"4px",fontSize:"27px"}}><GoArrowUpRight /></span></p>
+      </div>
+        </div>
+        <div>
+          <div className="content">
+        <p className="pera" style={{display:"flex",marginTop:"80px"}}>Action <span style={{marginTop:"4px",fontSize:"27px"}}><GoArrowUpRight /></span></p>
+      </div>
         </div>
       </div>
 
-      {/* second div */}
-
-      <div className="carsec" data-aos="fade-up">
-        <div>
-          <Card className="Card">
-            <Card.Img src={image} alt="Card image" className="img" />
-            <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
-            </Card.ImgOverlay>
-          </Card>
-        </div>
-        <div>
-          <Card className="Card">
-            <Card.Img src={image} alt="Card image" className="img" />
-            <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
-            </Card.ImgOverlay>
-          </Card>
-        </div>
-        <div>
-          <Card className="Card">
-            <Card.Img src={image} alt="Card image" className="img" />
-            <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
-            </Card.ImgOverlay>
-          </Card>
-        </div>
-      </div>
-
-      <div style={{ textAlign: "center",fontFamily:"initial" }} data-aos="fade-up">
+      <div
+        style={{ textAlign: "center", fontFamily: "initial",marginTop:"110px" }}
+        data-aos="fade-up"
+      >
         <h1>Rise to create value</h1>
         <h5>Mahindra Group's Financial Highlights</h5>
       </div>
 
-
-
-
-  
-
+      
     </>
   );
 }
