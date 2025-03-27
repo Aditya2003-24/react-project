@@ -7,7 +7,10 @@ function BasicExample() {
         <div>
           <Card style={{ width: "18rem" }}>
             <Card.Body>
-              <Card.Title>#1 in SUVs with revenue</Card.Title>
+              <Card.Title>
+                #1 in SUVs with revenuemarket share at 23%,up 200 bps,SUV
+                volumes up 20% in Q3.
+              </Card.Title>
             </Card.Body>
             <Card.Img variant="top" src={img} />
           </Card>
@@ -15,7 +18,9 @@ function BasicExample() {
         <div>
           <Card style={{ width: "18rem" }}>
             <Card.Body>
-              <Card.Title>#1 in SUVs with revenue</Card.Title>
+              <Card.Title>
+                #1 in Tractor: market share at 44.2%,up 240 bps.
+              </Card.Title>
             </Card.Body>
             <Card.Img variant="top" src={img} />
           </Card>
@@ -23,7 +28,10 @@ function BasicExample() {
         <div>
           <Card style={{ width: "18rem" }}>
             <Card.Body>
-              <Card.Title>#1 in SUVs with revenue</Card.Title>
+              <Card.Title>
+                Tech Mahindra EBIT up 480 bps, continued focus on margin
+                expansion.
+              </Card.Title>
             </Card.Body>
             <Card.Img variant="top" src={img} />
           </Card>
@@ -36,6 +44,16 @@ function BasicExample() {
             </Card.Body>
           </Card>
         </div> */}
+        <div>
+          <Card style={{ width: "18rem" }}>
+            <Card.Body>
+              <Card.Title style={{color:"red"}}>
+                Mahindra Lifespaces residential pre-sales of Rs 334 cr.
+              </Card.Title>
+            </Card.Body>
+            <Card.Img variant="top" src={img} />
+          </Card>
+        </div>
       </div>
     </>
   );
