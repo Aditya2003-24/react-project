@@ -15,6 +15,9 @@ import Example from './Signup'
 import Login from "./Login";
 import CarBooking from './Carbooking'
 import Tailwind from './Tailwind'
+import Table1 from './Table'
+import Admin from './Admin_table'
+
 
 
 
@@ -39,6 +42,8 @@ function App() {
         <Route path="/example" element={<Example />} />
         <Route path="/login" element={<Login />} />
         <Route path="/car" element={<CarBooking />} />
+        <Route path="/tab" element={<Table1 />} /> 
+        <Route path="/adm" element={<Admin/>} /> 
       </Routes>
 
       {/* <Layout />

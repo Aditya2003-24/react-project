@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const CarBooking = () => {
@@ -18,6 +19,7 @@ const CarBooking = () => {
     const { name, value } = e.target;
     setBookingData({ ...bookingData, [name]: value });
   }
+  let login=useNavigate()
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -25,6 +27,7 @@ const CarBooking = () => {
     alert("Car booked successfully!");
     axios.post("http://localhost:3000/car",bookingData)
     .then(res=>alert('Data save successfully'));
+    login("/tab")
   }
 
   return (

@@ -56,6 +56,9 @@ function NavScrollExample() {
             <Nav.Link as={Link} to="/login" style={{ color: "white" }}>
               Login
             </Nav.Link>
+            <Nav.Link as={Link} to="/adm" style={{ color: "white" }}>
+              Admin Login
+            </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

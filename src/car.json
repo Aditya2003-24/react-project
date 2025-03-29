@@ -1,15 +1,12 @@
 {
   "car": [
     {
-      "id": "8677"
-    },
-    {
-      "id": "00d3",
+      "id": "1",
       "name": "Aditya Yadav",
       "email": "adityayadavadi6100@gmail.com",
-      "phone": "062617 07257",
+      "phone": "62617 07257",
       "carModel": "Honda Civic",
-      "pickupDate": "2025-03-20",
+      "pickupDate": "2025-03-21",
       "returnDate": "2025-03-20",
       "pickupLocation": "arihant bihar"
     }
