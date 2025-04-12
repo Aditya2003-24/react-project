@@ -9,6 +9,16 @@
       "pickupDate": "2025-03-21",
       "returnDate": "2025-03-20",
       "pickupLocation": "arihant bihar"
+    },
+    {
+      "id": "ad7d",
+      "name": "Aditya yadav",
+      "email": "adityayadavadi6100@gmail.com",
+      "phone": "344567889",
+      "carModel": "Toyota Corolla",
+      "pickupDate": "2025-04-13",
+      "returnDate": "2025-04-14",
+      "pickupLocation": "arihant bihar"
     }
   ]
 }

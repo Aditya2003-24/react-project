@@ -6,8 +6,6 @@
     
 }
 
-
-/* Centering the form container */
 .input {
   display: flex;
   justify-content: center;
@@ -16,7 +14,7 @@
   background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
-/* Form container styling */
+
 .dec {
   background: white;
   padding: 2rem;
@@ -26,7 +24,7 @@
   text-align: center;
 }
 
-/* Label styling */
+
 .lab, .ema, .pass {
   display: block;
   margin-bottom: 8px;
@@ -36,7 +34,7 @@
   text-align: left;
 }
 
-/* Input fields styling */
+
 .inp, .put, .word {
   width: 100%;
   padding: 10px;
@@ -47,14 +45,14 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Input focus effect */
+
 .inp:focus, .put:focus, .word:focus {
   border-color: #6a11cb;
   outline: none;
   box-shadow: 0px 0px 5px rgba(106, 17, 203, 0.3);
 }
 
-/* Submit button styling */
+
 .sub {
   width: 100%;
   padding: 12px;
@@ -67,7 +65,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Button hover effect */
+
 .sub:hover {
   background-color: #2575fc;
 }
@@ -77,13 +75,6 @@
 
 
 
-
-
-
-
-
-
-/* Centering the login form */
 .log {
   display: flex;
   justify-content: center;
@@ -92,7 +83,7 @@
   background: linear-gradient(to right, #ff758c, #ff7eb3);
 }
 
-/* Form container styling */
+
 .orm {
   background: white;
   padding: 2rem;
@@ -102,7 +93,7 @@
   text-align: center;
 }
 
-/* Label styling */
+
 .use, .leb {
   display: block;
   margin-bottom: 8px;
@@ -112,7 +103,7 @@
   text-align: left;
 }
 
-/* Input fields styling */
+
 .rnam, .egna {
   width: 100%;
   padding: 10px;
@@ -123,14 +114,14 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Input focus effect */
+
 .rnam:focus, .egna:focus {
   border-color: #ff758c;
   outline: none;
   box-shadow: 0px 0px 5px rgba(255, 117, 140, 0.3);
 }
 
-/* Submit button styling */
+
 .tim {
   width: 100%;
   padding: 12px;
@@ -143,7 +134,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Button hover effect */
+
 .tim:hover {
   background-color: #ff4f75;
 }
@@ -156,7 +147,7 @@
 
 
 
-/* Booking Form Container */
+
 .booking-container {
   display: flex;
   flex-direction: column;
@@ -240,6 +231,72 @@
             width: 379px;
             height: 168px;
         }
+
+         .content1 {
+             background: url('src/IMAGES/jeep-7577598_1280.jpg') no-repeat center center/cover;
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 379px;
+            height: 168px;
+        }
+        .content2 {
+             background: url('src/IMAGES/car-171422_1280.jpg') no-repeat center center/cover;
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 379px;
+            height: 168px;
+        }
+        .content3 {
+             background: url('src/IMAGES/car-1376190_1280.jpg') no-repeat center center/cover;
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 379px;
+            height: 168px;
+        }
+        .content4 {
+             background: url('src/IMAGES/aston-martin-2118857_1280.webp') no-repeat center center/cover;
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 379px;
+            height: 168px;
+        }
+        .content5 {
+             background: url('src/IMAGES/car-63930_1280.jpg') no-repeat center center/cover;
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 379px;
+            height: 168px;
+        }.content6 {
+             background: url('src/IMAGES/car-race-438467_1280.jpg') no-repeat center center/cover;
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 379px;
+            height: 168px;
+        }
+
+        .content7 {
+             background: url('src/IMAGES/lighthouse-9183463_1280.jpg') no-repeat center center/cover;
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 379px;
+            height: 168px;
+        }
+
+        .content8 {
+             background: url('src/IMAGES/download.jpeg') no-repeat center center/cover;
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 379px;
+            height: 168px;
+        }
        
         .pera{
             font-size: 20px;
@@ -311,7 +368,7 @@
 
 
 
-    /* Footer section */
+   
 
 
 
@@ -399,7 +456,7 @@
             margin-top: 20px;
         }
 
-        /* Responsive Design */
+       
         @media (max-width: 768px) {
             .footer-container {
                 flex-direction: column;
@@ -413,3 +470,10 @@
                 justify-content: center;
             }
         }
+
+         @media (max-width: 426px)
+         {
+          #rase{
+          margin-right: 162px;
+         }
+         }

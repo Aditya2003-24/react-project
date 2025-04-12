@@ -29,21 +29,10 @@ function NavScrollExample() {
             <Nav.Link href="#action1" style={{ color: "white" }}>
               Home
             </Nav.Link>
-            <Nav.Link href="#action2" style={{ color: "white" }}>
-              Link
-            </Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3" style={{ color: "white" }}>
-                Action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4" style={{ color: "white" }}>
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5" style={{ color: "white" }}>
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
+            
+              
+              
+              
             <Nav.Link href="#" disabled style={{ color: "white" }}>
               Link
             </Nav.Link>
