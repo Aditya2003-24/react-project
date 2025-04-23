@@ -5,15 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-{/* <h2
-  class="heading font-regular aos-init aos-animate"
-  data-aos="fade-up"
-  data-aos-offset="100"
-  data-aos-duration="650"
-  data-aos-easing="ease-in-out"
->
-  What we do
-</h2>; */}
+
 
 
 

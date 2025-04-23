@@ -5,7 +5,6 @@ import Cards from "./Cards";
 import UncontrolledExample from "./Carousel";
 import Footer from "./Footer";
 import NavScrollExample from "./Navbar"
-import FillExample from "./Navbar2"
 import BasicExample from "./Rise";
 
 
@@ -19,9 +18,8 @@ const Layout = () => {
     <>
       <NavScrollExample />
 
-      <FillExample />
-      <br />
-      <br />
+   
+     
 
       <UncontrolledExample />
       <br/>

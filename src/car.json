@@ -19,6 +19,16 @@
       "pickupDate": "2025-04-13",
       "returnDate": "2025-04-14",
       "pickupLocation": "arihant bihar"
+    },
+    {
+      "id": "5ca3",
+      "name": "Aditya yadav",
+      "email": "adityayadavadi6100@gmail.com",
+      "phone": "6261707257",
+      "carModel": "BMW X5",
+      "pickupDate": "2025-04-13",
+      "returnDate": "2025-04-13",
+      "pickupLocation": "arihant bihar"
     }
   ]
 }

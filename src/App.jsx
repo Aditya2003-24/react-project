@@ -17,6 +17,7 @@ import CarBooking from './Carbooking'
 import Tailwind from './Tailwind'
 import Table1 from './Table'
 import Admin from './Admin_table'
+// import { AuthProvider } from "./AuthContext";
 
 
 
@@ -31,20 +32,22 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<UncontrolledExample />} />
-          <Route path="/card" element={<Cards />} />
-          <Route path="/tailwind" element={<Tailwind />} />
-          <Route path="/basicexample" element={<BasicExample />} />
-          <Route path="/footer" element={<Footer />} />
-        </Route>
-        <Route path="/example" element={<Example />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/car" element={<CarBooking />} />
-        <Route path="/tab" element={<Table1 />} /> 
-        <Route path="/adm" element={<Admin/>} /> 
-      </Routes>
+      
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<UncontrolledExample />} />
+            <Route path="/card" element={<Cards />} />
+            <Route path="/tailwind" element={<Tailwind />} />
+            <Route path="/basicexample" element={<BasicExample />} />
+            <Route path="/footer" element={<Footer />} />
+          </Route>
+          <Route path="/example" element={<Example />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/car" element={<CarBooking />} />
+          <Route path="/tab" element={<Table1 />} />
+          <Route path="/adm" element={<Admin />} />
+        </Routes>
+     
 
       {/* <Layout />
       <br />
