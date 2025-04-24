@@ -17,10 +17,6 @@ const Layout = () => {
   return (
     <>
       <NavScrollExample />
-
-   
-     
-
       <UncontrolledExample />
       <br/>
       {/* <Table1/> */}

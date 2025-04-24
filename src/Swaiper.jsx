@@ -4,6 +4,7 @@ import image from "./IMAGES/mahindra-logo-new.webp"
 import ima from "./IMAGES/lavender-7341619_1280.jpg"
 import im from "./IMAGES/lighthouse-9183463_1280.jpg"
 
+
 import './index.css';
 import 'swiper/css';
 import 'swiper/css/navigation';

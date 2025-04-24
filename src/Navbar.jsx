@@ -1,23 +1,28 @@
+import React, { useContext } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import './App.css'
-import img from './IMAGES/mahindra-logo-new.webp'
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
+import "./App.css";
+import img from "./IMAGES/mahindra-logo-new.webp";
+import { AuthContext } from "./AuthContext";
 
 function NavScrollExample() {
+  const { isAuthenticated, logout } = useContext(AuthContext);
+  const navigate = useNavigate();
 
-
+  const handleLogout = () => {
+    logout();
+    navigate("/login");
+  };
 
   return (
-    <Navbar expand="lg" className="" style={{ backgroundColor: "black" }}>
+    <Navbar expand="lg" style={{ backgroundColor: "black" }}>
       <Container fluid>
         <Navbar.Brand href="#" style={{ color: "white" }}>
-          <img src={img} alt="" />
+          <img src={img} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -29,23 +34,32 @@ function NavScrollExample() {
             <Nav.Link href="#action1" style={{ color: "white" }}>
               Home
             </Nav.Link>
-            
-              
-              
-              
             <Nav.Link href="#" disabled style={{ color: "white" }}>
               Link
             </Nav.Link>
             <Nav.Link as={Link} to="/car" style={{ color: "white" }}>
               Booking
             </Nav.Link>
-            <Nav.Link as={Link} to="/example" style={{ color: "white" }}>
-              Singup
-            </Nav.Link>
-            <Nav.Link as={Link} to="/login" style={{ color: "white" }}>
-              Login
-            </Nav.Link>
-            <Nav.Link as={Link} to="/adm" style={{ color: "white" }}>
+
+            {!isAuthenticated ? (
+              <>
+                <Nav.Link as={Link} to="/example" style={{ color: "white" }}>
+                  Singup
+                </Nav.Link>
+                <Nav.Link as={Link} to="/login" style={{ color: "white" }}>
+                  Login
+                </Nav.Link>
+              </>
+            ) : (
+              <Nav.Link
+                onClick={handleLogout}
+                style={{ color: "white", cursor: "pointer" }}
+              >
+                Logout
+              </Nav.Link>
+            )}
+
+            <Nav.Link as={Link} to="/admin" style={{ color: "white" }}>
               Admin Login
             </Nav.Link>
           </Nav>

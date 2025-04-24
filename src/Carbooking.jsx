@@ -42,7 +42,7 @@ const CarBooking = () => {
         <h2>Car Booking Form</h2>
         <form onSubmit={handleSubmit} className="booking-form">
           <label>Name</label>
-          <input type="text" name="name" onChange={handleChange} required />
+          <input type="text" name="name" onChange={handleChange} autoFocus required />
 
           <label>Email</label>
           <input type="email" name="email" onChange={handleChange} required />

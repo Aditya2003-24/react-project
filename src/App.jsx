@@ -11,13 +11,17 @@ import "aos/dist/aos.css"
 
 
 import { Route, Routes } from 'react-router-dom'
-import Example from './Signup'
+import Signup from "./Signup";
 import Login from "./Login";
 import CarBooking from './Carbooking'
 import Tailwind from './Tailwind'
 import Table1 from './Table'
 import Admin from './Admin_table'
+// import AdminLogin from "./AdminLogin";
+import { AuthProvider } from "./AuthContext";
+import AdminLogin from './Admin'
 // import { AuthProvider } from "./AuthContext";
+
 
 
 
@@ -32,7 +36,7 @@ function App() {
 
   return (
     <>
-      
+      <AuthProvider>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<UncontrolledExample />} />
@@ -41,13 +45,16 @@ function App() {
             <Route path="/basicexample" element={<BasicExample />} />
             <Route path="/footer" element={<Footer />} />
           </Route>
-          <Route path="/example" element={<Example />} />
+          <Route path="/example" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/car" element={<CarBooking />} />
           <Route path="/tab" element={<Table1 />} />
           <Route path="/adm" element={<Admin />} />
+          <Route path="/admin" element={<AdminLogin />} />
+
+          {/* <Route path="/adm" element={<AdminLogin />} /> */}
         </Routes>
-     
+      </AuthProvider>
 
       {/* <Layout />
       <br />

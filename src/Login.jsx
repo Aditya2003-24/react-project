@@ -1,64 +1,87 @@
-import { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { PiUserCircleCheckThin } from "react-icons/pi";
+import NavScrollExample from "./Navbar";
+import Footer from "./Footer";
+import { AuthContext } from "./AuthContext";
+
 
 const Login = () => {
-  let [frmdata, setFrmdata] = useState({
+  const [frmdata, setFrmdata] = useState({
     username: "",
     password: "",
   });
-  let [signdata, setSign] = useState("");
+  const [signdata, setSign] = useState(null);
 
-  let Loginnav = useNavigate();
+  const navigate = useNavigate();
+  const { login } = useContext(AuthContext);
 
-  //     function logindata(e){
-
-  //      e.preventDefault()
-  //      console.log(frmdata);
-  //      let z = localStorage.getItem("userdaata");
-  //      z=JSON.parse(z);
-  //      if(z.username==frmdata.username && z.password==frmdata.password)
-  //      {
-  //         alert("data save successfuly")
-  //         Loginnav("/home")
-  //      }
-  //      else{
-  //         alert("please enter valid details")
-  //      }
-
-  //  }
-
-  function loginfinal(e) {
-    e.preventDefault();
-    if (
-      signdata.username != frmdata.username ||
-      signdata.password != frmdata.password
-    ) {
-      alert("user not found");
-    } else {
-      alert("data save successfulu");
-      Loginnav("/");
-    }
-  }
-
-  function inpchange(e) {
+  const inpchange = (e) => {
     const { name, value } = e.target;
     setFrmdata({ ...frmdata, [name]: value });
-  }
+  };
+
+  const loginfinal = (e) => {
+    e.preventDefault();
+    if (
+      !signdata ||
+      signdata.username !== frmdata.username ||
+      signdata.password !== frmdata.password
+    ) {
+      alert("User not found");
+    } else {
+      alert("Login successful");
+      login();
+      navigate("/");
+    }
+  };
 
   useEffect(() => {
-    let signdataa = JSON.parse(localStorage.getItem("userdaata"));
-    setSign(signdataa);
+    const storedData = JSON.parse(localStorage.getItem("userdata"));
+    setSign(storedData);
   }, []);
-  return (
-    <div className="log">
-      <form action="" onSubmit={loginfinal} className="orm">
-        <label htmlFor="" className="use">Username</label>
-        <input type="text" name="username" onChange={inpchange} className="rnam" />
-        <label htmlFor="" className="leb">Password</label>
-        <input type="text" name="password" onChange={inpchange} className="egna" />
 
-        <input type="submit" className="tim"/>
-      </form>
+  return (
+    <div style={{ backgroundColor: "#dadada" }}>
+      <NavScrollExample />
+      <div className="main">
+        <div className="fo">
+          <form onSubmit={loginfinal} className="orm">
+            <PiUserCircleCheckThin
+              style={{ fontSize: "144px", marginLeft: "62px" }}
+            />
+
+            <label className="use">Username</label>
+            <input
+              type="text"
+              name="username"
+              onChange={inpchange}
+              className="rnam"
+              autoFocus
+              required
+            />
+
+            <label className="leb">Password</label>
+            <input
+              type="password"
+              name="password"
+              onChange={inpchange}
+              className="egna"
+              required
+            />
+
+            <input type="submit" className="tim" value="Login" />
+          </form>
+        </div>
+        <div className="come">
+          <h1 className="wel">Welcome.</h1>
+          <p className="per">
+            Lorem ipsum dolor sit amet, consectetur <br />
+            adipisicing elit. Dignissimos, veniam?
+          </p>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

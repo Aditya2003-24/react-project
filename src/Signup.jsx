@@ -1,57 +1,92 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import NavScrollExample from "./Navbar";
+import Footer from "./Footer";
+import { CiUser } from "react-icons/ci";
 
-
-const Example = () => {
-  let [frmdata, setFrmdata] = useState({
+const Signup = () => {
+  const [frmdata, setFrmdata] = useState({
     username: "",
     email: "",
     password: "",
   });
 
-  let Loginnav = useNavigate();
+  const navigate = useNavigate();
 
-  // function inpchange(e){
-  //     console.log(e.target.value);
-  //     setFrmdata(e.target.value)
-  // }
-
-  function inpchange(e) {
+  const inpchange = (e) => {
     const { name, value } = e.target;
     setFrmdata({ ...frmdata, [name]: value });
-  }
+  };
 
-  function finalsubmit(e) {
+  const finalsubmit = (e) => {
     e.preventDefault();
     console.log(frmdata);
-    localStorage.setItem("userdaata", JSON.stringify(frmdata));
-    Loginnav("/login");
-  }
+    localStorage.setItem("userdata", JSON.stringify(frmdata));
+    navigate("/login");
+  };
 
   return (
-    <div className="input">
-      {/* {frmdata}
-      <input type="text" placeholder="enter your name" onChange={inpchange} /> */}
-      <div className="dec">
-        <form action="" onSubmit={finalsubmit} className="fom">
-          <label htmlFor="" className="lab">Username</label>
-          <input type="text" name="username" onChange={inpchange} className="inp"/>
-          <br />
+    <div style={{ backgroundColor: "#dadada" }}>
+      <NavScrollExample />
+      <div className="sig">
+        <div className="our">
+          <CiUser
+            style={{
+              fontSize: "100px",
+              marginLeft: "236px",
+              marginTop: "20px",
+              color: "#7f7fb1",
+            }}
+          />
+          <h1 className="hed">
+            Welcome to our <br /> signup page
+          </h1>
+          <p className="pero">
+            Lorem ipsum dolor sit, amet consectetur <br />
+            adipisicing elit. Repellat, maxime?
+          </p>
+        </div>
 
-          <label htmlFor="" className="ema">Email</label>
-          <input type="text" name="email" onChange={inpchange} className="put" />
-          <br />
+        <div className="dec">
+          <form onSubmit={finalsubmit} className="fom">
+            <label className="lab">Username</label>
+            <input
+              type="text"
+              name="username"
+              onChange={inpchange}
+              className="inp"
+              autoFocus
+              required
+            />
+            <br />
 
-          <label htmlFor="" className="pass">Password</label>
-          <input type="text" name="password" onChange={inpchange} className="word" />
-          <br />
+            <label className="ema">Email</label>
+            <input
+              type="email"
+              name="email"
+              onChange={inpchange}
+              className="put"
+              required
+            />
+            <br />
 
-          <input type="submit" className="sub"/>
-        </form>
+            <label className="pass">Password</label>
+            <input
+              type="password"
+              name="password"
+              onChange={inpchange}
+              className="word"
+              required
+            />
+            <br />
+
+            <input type="submit" className="sub" value="Sign Up" />
+          </form>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };
 
-export default Example;
+export default Signup;

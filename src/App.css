@@ -9,72 +9,139 @@ body{
   overflow-x: hidden;
 }
 
+/* Example.css */
+
 .input {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  padding: 20px;
 }
+.sig{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   margin-top: 102px;
+    margin-bottom: 56px;
+  
+}
+.our{
+  width: 600px;
+  background-image: url('src/IMAGES/jeep-7853620_1280.webp');
+  background-size: cover;
+      height: 471px;
 
+}
+.hed{
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 3px;
+    color: #3c97b7;
+    font-size: 63px;
+}
+.pero{
+text-align: center;
+ color: #dfefff;
+ font-size: 24px;
+  
+    margin-top: 66px;
+}
 
 .dec {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  width: 350px;
-  text-align: center;
+  background-color: #dbdcdd;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 400px;
 }
 
+.fom {
+  display: flex;
+  flex-direction: column;
+}
 
 .lab, .ema, .pass {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
+  margin-bottom: 6px;
   color: #333;
-  text-align: left;
 }
-
 
 .inp, .put, .word {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 2px solid #ccc;
-  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   font-size: 14px;
-  transition: all 0.3s ease-in-out;
+  transition: border-color 0.3s;
 }
-
 
 .inp:focus, .put:focus, .word:focus {
-  border-color: #6a11cb;
+  border-color: #007bff;
   outline: none;
-  box-shadow: 0px 0px 5px rgba(106, 17, 203, 0.3);
 }
-
 
 .sub {
-  width: 100%;
   padding: 12px;
-  border: none;
-  border-radius: 6px;
-  background-color: #6a11cb;
+  background-color: #007bff;
   color: white;
-  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s;
 }
-
 
 .sub:hover {
-  background-color: #2575fc;
+  background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .dec {
+    padding: 20px;
+  }
+
+  .inp, .put, .word {
+    font-size: 13px;
+  }
 }
 
 
 
+
+.main{
+  display: flex;
+ 
+  /* background-color: beige; */
+  align-items: center;
+  justify-content: center;
+      margin-top: 100px;
+    margin-bottom: 82px;
+       
+
+}
+.come{
+     width: 500px;
+  height: 600px;
+  background-image: url('src/IMAGES/car-1376190_1280.jpg');
+  background-size: cover;
+}
+.wel{
+      color: white;
+    margin-top: 192px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 47px;
+}
+.per{
+  color: rgb(210, 189, 189);
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 40px;
+
+}
 
 
 
@@ -88,12 +155,13 @@ body{
 
 
 .orm {
-  background: white;
+  background: #b5b5b5;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   width: 350px;
   text-align: center;
+  height: 600px;
 }
 
 
